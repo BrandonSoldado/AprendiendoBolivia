@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center; 
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
+}
+
+.illustration img {
+    width: 80%;
+    height: auto; /* Asegúrate de que la altura se ajuste automáticamente */
+}
+
+.login-section {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #008c9e;
+}
+
+.login-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #888;
+}
+
+.login-section label {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.login-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; 
+}
+
+.btn {
+    width: 30% !important; /* Hacer los botones más angostos */
+    padding: 10px; 
+    border: none;
+    border-radius: 20px; 
+    font-size: 1rem; 
+    cursor: pointer;
+    background-color: #008c9e; /* Color verde agua más oscuro */
+    color: #fff; /* Cambiar el color del texto a blanco para mejor contraste */
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #007a8b; /* Un tono más oscuro para el hover */
+}

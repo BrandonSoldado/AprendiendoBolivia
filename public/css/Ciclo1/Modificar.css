@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #00bcd4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.7rem; /* Tamaño de la fuente */
+    color: white;
+}
+
+header .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+header .contact-info span {
+    margin-right: 14px;
+}
+
+header .social-icons a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: white;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrar las opciones del menú */
+    align-items: center; /* Centrar verticalmente las opciones */
+    gap: 20px; /* Espacio entre las opciones */
+    margin: 0;
+    padding: 0;
+    font-size: 1.0rem; /* Tamaño de la fuente */
+}
+
+nav ul li {
+    position: relative; /* Para manejar la posición del botón de cerrar sesión */
+}
+
+nav ul li a {
+    color: black; /* Color del texto */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #00bcd4; /* Cambia el color al pasar el mouse */
+}
+
+footer {
+    text-align: center;
+}
+
+nav li form {
+    display: inline; /* Mantiene el botón en línea con el texto */
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+nav li form button {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color: black; /* Color del texto del botón */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    font-size: inherit; /* Hereda el tamaño de la fuente */
+    padding: 10px; /* Padding para alinear */
+}
+
+nav li form button:hover {
+    background-color: #00bcd4; /* Color de fondo al pasar el mouse */
+    color: white; /* Cambiar el color del texto al pasar el mouse */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 70px; /* Ajusta el valor según sea necesario */
+}
+
+.form-box {
+    background-color: #008c9e;
+    padding: 40px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-box h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    color: #000;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: -9.2px;
+    left: 50px;
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.buttons {
+    display: flex; /* Usar flexbox para la alineación de botones */
+    justify-content: space-between; /* Espacio entre botones */
+    margin-top: 30px; /* Margen superior */
+}
+
+.btn {
+    width: 100px; /* Ancho fijo para los botones (ajusta según sea necesario) */
+    height: 40px; /* Altura del botón */
+    background-color: #00bcd4; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    font-size: 1rem; /* Tamaño de la fuente */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #008c9e; /* Color de fondo al pasar el mouse */
+}
+
+.alert {
+    background-color: #f44336; /* Color de fondo para errores */
+    color: white; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior */
+}

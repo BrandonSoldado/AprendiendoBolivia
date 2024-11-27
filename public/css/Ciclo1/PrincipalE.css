@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #00bcd4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que el header se ajuste en pantallas pequeñas */
+}
+
+header .logo {
+    font-size: 1.7rem;
+    color: white;
+}
+
+header .contact-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que la información de contacto se ajuste */
+}
+
+header .contact-info span {
+    margin-right: 14px;
+}
+
+header .social-icons a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: white;
+    padding: 5px;
+    overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Mantener el menú en horizontal */
+    justify-content: flex-start; /* Alinear a la izquierda */
+    align-items: center; /* Centrar verticalmente las opciones */
+    gap: 20px; /* Espacio entre las opciones */
+    margin: 0;
+    padding: 0;
+    font-size: 1.0rem;
+    min-width: 600px; /* Asegura que el menú tenga un ancho mínimo */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #00bcd4;
+}
+
+.illustration img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantener la proporción */
+    object-fit: cover;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px; /* Agregar padding al pie de página */
+}
+
+nav li form {
+    display: inline; /* Mantiene el botón en línea con el texto */
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+nav li form button {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color: black; /* Color del texto del botón */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    font-size: inherit; /* Hereda el tamaño de la fuente */
+    padding: 10px; /* Padding para alinear */
+}
+
+nav li form button:hover {
+    background-color: #00bcd4; /* Color de fondo al pasar el mouse */
+    color: white; /* Cambiar el color del texto al pasar el mouse */
+}
